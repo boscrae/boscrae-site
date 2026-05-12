@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — BOSCRAE LIMITED</title>
+<meta name="description" content="Privacy Policy for BOSCRAE LIMITED, a British Virgin Islands business company, in compliance with the BVI Data Protection Act, 2021." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://boscraeltd.com/privacy.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@300;400;500&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0c;
+    --bg-2: #101013;
+    --surface: #15151a;
+    --line: rgba(255,255,255,0.08);
+    --line-strong: rgba(255,255,255,0.16);
+    --text: #ececee;
+    --text-dim: #8a8a92;
+    --text-mute: #56565e;
+    --accent: #c8ff5b;
+    --serif: "Fraunces", "Times New Roman", serif;
+    --sans: "Inter Tight", -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(110,231,255,0.06), transparent 60%),
+      radial-gradient(ellipse 60% 40% at 90% 110%, rgba(200,255,91,0.04), transparent 60%);
+  }
+
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    z-index: 100;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ============ NAV ============ */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 50;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(10,10,12,0.65);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .logo {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text);
+  }
+  .logo-mark {
+    width: 22px; height: 22px;
+    border: 1.5px solid var(--text);
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+  }
+  .logo-mark::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+  .nav-back {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-back:hover { color: var(--accent); }
+
+  /* ============ HEADER ============ */
+  .doc-header {
+    padding: 160px 0 80px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+  }
+  .doc-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-mute);
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .doc-eyebrow .dot {
+    width: 6px; height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+  .doc-title {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(44px, 6vw, 72px);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+  }
+  .doc-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .doc-meta {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-mute);
+  }
+  .doc-meta span strong {
+    color: var(--text);
+    font-weight: 400;
+    margin-left: 8px;
+  }
+
+  /* ============ CONTENT ============ */
+  .doc-body {
+    padding: 80px 0 100px;
+  }
+
+  .doc-intro {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-dim);
+    margin-bottom: 56px;
+    max-width: 720px;
+  }
+  .doc-intro strong {
+    color: var(--text);
+    font-weight: 400;
+  }
+
+  section.dpa {
+    margin-bottom: 56px;
+  }
+  section.dpa:last-of-type { margin-bottom: 0; }
+
+  .dpa-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    margin-bottom: 12px;
+    display: block;
+  }
+  h2.dpa-title {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(24px, 3vw, 32px);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+    color: var(--text);
+  }
+  .dpa p {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--text-dim);
+    margin-bottom: 16px;
+  }
+  .dpa p:last-child { margin-bottom: 0; }
+  .dpa p strong, .dpa li strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+  .dpa ul {
+    list-style: none;
+    margin: 16px 0 16px 0;
+    padding: 0;
+  }
+  .dpa ul li {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-dim);
+    padding: 8px 0 8px 24px;
+    position: relative;
+  }
+  .dpa ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-family: var(--mono);
+  }
+
+  /* Principles grid */
+  .principles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+    margin: 24px 0;
+  }
+  .principle {
+    padding: 24px 24px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .principle-name {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--text);
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+  .principle-desc {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.6;
+  }
+  @media (max-width: 700px) {
+    .principles { grid-template-columns: 1fr; }
+  }
+
+  /* Contact block */
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 36px 32px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  }
+  .contact-card-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    gap: 24px;
+  }
+  .contact-card-row:first-child { padding-top: 0; }
+  .contact-card-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .contact-card-key {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-mute);
+    padding-top: 2px;
+  }
+  .contact-card-val {
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .contact-card-val a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line-strong);
+    padding-bottom: 1px;
+    transition: border-color 0.2s;
+  }
+  .contact-card-val a:hover { border-color: var(--accent); }
+
+  @media (max-width: 700px) {
+    .contact-card-row { grid-template-columns: 1fr; gap: 6px; }
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 48px 0 40px;
+  }
+  .footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer-text {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-mute);
+  }
+  .footer-links {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-links a {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"></span>
+      BOSCRAE
+    </a>
+    <a href="index.html" class="nav-back">← Back to home</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="doc-header">
+  <div class="container">
+    <div class="doc-eyebrow">
+      <span class="dot"></span>
+      <span>Legal · Data Protection</span>
+    </div>
+    <h1 class="doc-title">Privacy <em>Policy.</em></h1>
+    <div class="doc-meta">
+      <span>Effective<strong>12 May 2026</strong></span>
+      <span>Last updated<strong>12 May 2026</strong></span>
+      <span>Version<strong>1.0</strong></span>
+    </div>
+  </div>
+</header>
+
+<!-- BODY -->
+<main class="doc-body">
+  <div class="container">
+
+    <p class="doc-intro">
+      This Privacy Policy describes how <strong>BOSCRAE LIMITED</strong>
+      (“BOSCRAE”, “we”, “us”, or “our”), a business company incorporated in
+      the British Virgin Islands, collects, uses, discloses and retains
+      personal data. This policy is issued in accordance with the
+      <strong>Virgin Islands Data Protection Act, 2021</strong> (the “DPA”),
+      which establishes seven data protection principles applicable to all
+      persons established in the British Virgin Islands who process personal
+      data.
+    </p>
+
+    <!-- 1. WHO WE ARE -->
+    <section class="dpa">
+      <span class="dpa-num">/ 01</span>
+      <h2 class="dpa-title">Who we are</h2>
+      <p>
+        BOSCRAE LIMITED is a business company incorporated under the laws of
+        the British Virgin Islands. For the purposes of the DPA, BOSCRAE acts
+        as a <strong>data controller</strong> in respect of the personal data
+        described in this policy. Our contact details and registered office
+        are set out at the end of this document.
+      </p>
+    </section>
+
+    <!-- 2. SCOPE -->
+    <section class="dpa">
+      <span class="dpa-num">/ 02</span>
+      <h2 class="dpa-title">Scope of this policy</h2>
+      <p>
+        This policy applies to personal data we process in connection with
+        commercial transactions, including data provided by visitors to this
+        website, prospective clients, clients, suppliers, service providers
+        and other counterparties.
+      </p>
+      <p>
+        “Personal data” means any information relating to an identified or
+        identifiable natural person, as defined in the DPA. “Sensitive
+        personal data” has the meaning given to it in the DPA.
+      </p>
+    </section>
+
+    <!-- 3. CATEGORIES OF DATA -->
+    <section class="dpa">
+      <span class="dpa-num">/ 03</span>
+      <h2 class="dpa-title">Personal data we collect</h2>
+      <p>We may collect and process the following categories of personal data:</p>
+      <ul>
+        <li><strong>Contact details</strong> — name, email address, business affiliation and any other information you voluntarily provide when contacting us.</li>
+        <li><strong>Correspondence content</strong> — the content of emails and other communications you send to us.</li>
+        <li><strong>Engagement information</strong> — information relating to professional engagements, including the identities of authorised representatives, billing contacts and project information.</li>
+        <li><strong>Compliance information</strong> — where required, information collected for the purposes of identity verification, anti-money laundering and other regulatory checks.</li>
+      </ul>
+      <p>
+        We do not knowingly collect <strong>sensitive personal data</strong> as
+        defined in the DPA. If you provide sensitive personal data to us, you
+        do so at your own initiative and expressly consent to our processing
+        of that data for the purposes for which you have submitted it.
+      </p>
+      <p>
+        This website does not use third-party analytics, advertising trackers
+        or persistent cookies for the purpose of profiling visitors. Where the
+        site is hosted by a third party (such as our hosting provider), that
+        provider may automatically log standard technical information such as
+        IP address, browser type and access time for the purposes of operating
+        and securing the service.
+      </p>
+    </section>
+
+    <!-- 4. PURPOSES & LAWFUL BASIS -->
+    <section class="dpa">
+      <span class="dpa-num">/ 04</span>
+      <h2 class="dpa-title">Purposes for which we use personal data</h2>
+      <p>We process personal data for the following purposes:</p>
+      <ul>
+        <li>To respond to enquiries and communications you initiate with us.</li>
+        <li>To negotiate, enter into and perform contracts for the provision of our services.</li>
+        <li>To manage and administer ongoing engagements with clients and counterparties.</li>
+        <li>To comply with applicable legal, regulatory and accounting obligations.</li>
+        <li>To establish, exercise or defend legal claims.</li>
+        <li>To maintain the security and integrity of our website, communications and records.</li>
+      </ul>
+      <p>
+        Under the <strong>General Principle</strong> of the DPA, we will not
+        process your personal data without your express consent or another
+        lawful basis permitted under the DPA, such as performance of a
+        contract to which you are a party, compliance with a legal obligation,
+        or protection of our legitimate interests.
+      </p>
+    </section>
+
+    <!-- 5. THE SEVEN PRINCIPLES -->
+    <section class="dpa">
+      <span class="dpa-num">/ 05</span>
+      <h2 class="dpa-title">Our commitment to the seven DPA principles</h2>
+      <p>
+        We process personal data in accordance with the seven data protection
+        principles set out in the DPA:
+      </p>
+      <div class="principles">
+        <div class="principle">
+          <div class="principle-name">General Principle</div>
+          <div class="principle-desc">We process personal data only with consent or another lawful basis under the DPA.</div>
+        </div>
+        <div class="principle">
+          <div class="principle-name">Notice &amp; Choice</div>
+          <div class="principle-desc">We inform data subjects of how their personal data will be processed, through this policy and other notices.</div>
+        </div>
+        <div class="principle">
+          <div class="principle-name">Disclosure</div>
+          <div class="principle-desc">We do not disclose personal data for purposes other than those notified, except as permitted by law.</div>
+        </div>
+        <div class="principle">
+          <div class="principle-name">Security</div>
+          <div class="principle-desc">We apply appropriate technical and organisational measures to protect personal data.</div>
+        </div>
+        <div class="principle">
+          <div class="principle-name">Retention</div>
+          <div class="principle-desc">We retain personal data only for as long as is necessary for the purposes for which it was collected.</div>
+        </div>
+        <div class="principle">
+          <div class="principle-name">Data Integrity</div>
+          <div class="principle-desc">We take reasonable steps to keep personal data accurate, complete and up to date.</div>
+        </div>
+        <div class="principle">
+          <div class="principle-name">Access</div>
+          <div class="principle-desc">We provide data subjects with access to, and the ability to correct, their personal data.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. DISCLOSURE -->
+    <section class="dpa">
+      <span class="dpa-num">/ 06</span>
+      <h2 class="dpa-title">Disclosure of personal data</h2>
+      <p>
+        We may disclose personal data to the following categories of third
+        parties, where necessary for the purposes set out in this policy:
+      </p>
+      <ul>
+        <li>Our professional advisers, including legal, accounting and tax advisers.</li>
+        <li>Our registered agent and other service providers acting on our behalf, in their capacity as data processors.</li>
+        <li>Technology service providers, including providers of email, file storage, software development and hosting infrastructure.</li>
+        <li>Regulators, governmental authorities, law enforcement agencies and courts where required by law or in accordance with the Disclosure Principle of the DPA.</li>
+      </ul>
+      <p>
+        Where we engage a data processor to process personal data on our
+        behalf, we take reasonable steps to ensure that the processor
+        maintains appropriate technical and organisational safeguards as
+        required under the DPA.
+      </p>
+    </section>
+
+    <!-- 7. INTERNATIONAL TRANSFERS -->
+    <section class="dpa">
+      <span class="dpa-num">/ 07</span>
+      <h2 class="dpa-title">International transfers of personal data</h2>
+      <p>
+        BOSCRAE is incorporated in the British Virgin Islands but operates
+        internationally. Personal data we process may, in the course of our
+        business, be transferred to or stored in jurisdictions outside the
+        British Virgin Islands, including jurisdictions where our service
+        providers (such as hosting, email and storage providers) are located.
+      </p>
+      <p>
+        In accordance with the General Principle of the DPA, we will not
+        transfer personal data outside the British Virgin Islands unless
+        either (i) there are adequate safeguards in place in respect of that
+        personal data in the recipient jurisdiction, or (ii) the data subject
+        has given express consent to the transfer.
+      </p>
+    </section>
+
+    <!-- 8. RETENTION -->
+    <section class="dpa">
+      <span class="dpa-num">/ 08</span>
+      <h2 class="dpa-title">Retention</h2>
+      <p>
+        We retain personal data only for as long as is necessary to fulfil the
+        purposes for which it was collected, or as required by applicable law,
+        regulation or professional standards. When personal data is no longer
+        required, we will take reasonable steps to delete or anonymise it.
+      </p>
+    </section>
+
+    <!-- 9. SECURITY -->
+    <section class="dpa">
+      <span class="dpa-num">/ 09</span>
+      <h2 class="dpa-title">Security</h2>
+      <p>
+        We apply appropriate technical and organisational measures designed to
+        protect personal data against loss, misuse, modification, unauthorised
+        or accidental access or disclosure, alteration or destruction. No
+        method of transmission over the internet or method of electronic
+        storage is fully secure, however, and we cannot guarantee absolute
+        security.
+      </p>
+    </section>
+
+    <!-- 10. RIGHTS -->
+    <section class="dpa">
+      <span class="dpa-num">/ 10</span>
+      <h2 class="dpa-title">Your rights as a data subject</h2>
+      <p>Subject to the conditions and exceptions set out in the DPA, you have the right to:</p>
+      <ul>
+        <li>Request access to personal data we hold about you.</li>
+        <li>Request the correction of personal data that is inaccurate, incomplete, misleading or not up to date.</li>
+        <li>Withdraw any consent you have previously given to the processing of your personal data.</li>
+        <li>Request that we cease processing your personal data for the purposes of direct marketing.</li>
+        <li>Make a complaint to the British Virgin Islands Information Commissioner regarding the processing of your personal data.</li>
+      </ul>
+      <p>
+        To exercise any of these rights, please contact us using the details
+        below. We may need to verify your identity before responding to your
+        request and will respond within a reasonable period.
+      </p>
+    </section>
+
+    <!-- 11. DIRECT MARKETING -->
+    <section class="dpa">
+      <span class="dpa-num">/ 11</span>
+      <h2 class="dpa-title">Direct marketing</h2>
+      <p>
+        We do not conduct mass direct marketing. Where we send commercial
+        communications (such as updates to existing clients or contacts), you
+        may at any time request that we cease sending such communications by
+        contacting us at the address below. We will comply with such a
+        request without undue delay.
+      </p>
+    </section>
+
+    <!-- 12. CHANGES -->
+    <section class="dpa">
+      <span class="dpa-num">/ 12</span>
+      <h2 class="dpa-title">Changes to this policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect changes
+        in our practices, technology, legal requirements or other factors. The
+        “Effective” and “Last updated” dates at the top of this policy
+        indicate when the current version came into effect. We encourage you
+        to review this policy periodically.
+      </p>
+    </section>
+
+    <!-- 13. CONTACT -->
+    <section class="dpa">
+      <span class="dpa-num">/ 13</span>
+      <h2 class="dpa-title">How to contact us</h2>
+      <p>
+        For any questions about this Privacy Policy, or to exercise any of
+        your rights under the DPA, please contact us at:
+      </p>
+      <div class="contact-card">
+        <div class="contact-card-row">
+          <div class="contact-card-key">Legal Name</div>
+          <div class="contact-card-val">BOSCRAE LIMITED</div>
+        </div>
+        <div class="contact-card-row">
+          <div class="contact-card-key">Entity Type</div>
+          <div class="contact-card-val">BVI Business Company</div>
+        </div>
+        <div class="contact-card-row">
+          <div class="contact-card-key">Registered Office</div>
+          <div class="contact-card-val">
+            Aegis Chambers, 1st Floor,<br/>
+            Ellen Skelton Building,<br/>
+            3076 Sir Francis Drake’s Highway,<br/>
+            Road Town,<br/>
+            Virgin Islands, British
+          </div>
+        </div>
+        <div class="contact-card-row">
+          <div class="contact-card-key">Email</div>
+          <div class="contact-card-val">
+            <a href="mailto:info@boscraeltd.com">info@boscraeltd.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="logo" style="font-size: 16px;">
+      <span class="logo-mark" style="width:18px; height:18px;"></span>
+      BOSCRAE LIMITED
+    </a>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <div class="footer-text">
+      © 2026 BOSCRAE LIMITED · BVI Business Company
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
