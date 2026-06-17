@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BOSCRAE LIMITED — Software Development & Consulting</title>
+<meta name="description" content="BOSCRAE LIMITED is a British Virgin Islands business company providing web service development and consulting." />
+<meta name="theme-color" content="#0B1417" />
+<link rel="canonical" href="https://boscraeltd.com/" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" aria-hidden="true"></span>
+      BOSCRAE
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Get in touch →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+
+  <div class="instrument" id="instrument" aria-hidden="true">
+    <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle class="inst-ring" cx="120" cy="120" r="110" stroke-width="1"/>
+      <circle class="inst-ring faint" cx="120" cy="120" r="82" stroke-width="1"/>
+      <circle class="inst-ring brass" cx="120" cy="120" r="54" stroke-width="1"/>
+      <circle cx="120" cy="120" r="104" fill="none" stroke="rgba(236,231,218,0.18)" stroke-width="6" stroke-dasharray="1.3 8.2"/>
+      <circle cx="120" cy="120" r="99" fill="none" stroke="rgba(224,164,92,0.5)" stroke-width="10" stroke-dasharray="1.7 50.6"/>
+      <text class="inst-cardinal" x="120" y="26" text-anchor="middle" dominant-baseline="middle">N</text>
+      <text class="inst-cardinal" x="120" y="216" text-anchor="middle" dominant-baseline="middle">S</text>
+      <text class="inst-cardinal" x="214" y="121" text-anchor="middle" dominant-baseline="middle">E</text>
+      <text class="inst-cardinal" x="26" y="121" text-anchor="middle" dominant-baseline="middle">W</text>
+      <g class="pointer" id="bearing">
+        <line class="inst-pointer" x1="120" y1="122" x2="120" y2="18"/>
+        <path d="M120 11 L116 23 L124 23 Z" fill="var(--brass)"/>
+      </g>
+      <circle class="inst-hub-ring" cx="120" cy="120" r="9" stroke-width="1"/>
+      <circle class="inst-hub" cx="120" cy="120" r="3.5"/>
+    </svg>
+    <div class="inst-readout">
+      <span>Lat <b>18.42°N</b></span>
+      <span>Lon <b>64.62°W</b></span>
+      <span>Brg <b id="bearing-readout">152°</b></span>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="hero-eyebrow anim-up">
+      <span>British Virgin Islands</span>
+      <span class="seg" aria-hidden="true"></span>
+      <span class="coord">18.42°N · 64.62°W</span>
+    </div>
+
+    <h1 class="anim-up">
+      Software, built with <em>intent.</em><br/>
+      Guidance grounded in <em>craft.</em>
+    </h1>
+
+    <p class="hero-sub anim-up">
+      BOSCRAE LIMITED is a British Virgin Islands business company
+      focused on web service development and strategic consulting.
+    </p>
+
+    <div class="hero-foot anim-up">
+      <span class="label">Web Development · Strategic Consulting</span>
+      <div class="measure" aria-hidden="true"></div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="block">
+  <div class="container">
+    <div class="eyebrow reveal"><span>The Company</span></div>
+    <h2 class="reveal">A quiet studio operating between <em>code</em> and <em>guidance.</em></h2>
+    <div class="about-text reveal">
+      <p>
+        <strong>BOSCRAE LIMITED</strong> is an independent business company
+        incorporated under the laws of the British Virgin Islands, building
+        and advising on web services for an internationally distributed
+        clientele.
+      </p>
+      <p>
+        The studio operates with a deliberately narrow mandate: a small
+        number of engagements, each pursued with full attention.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="block tight">
+  <div class="container">
+    <div class="eyebrow reveal"><span>Services</span></div>
+    <h2 class="reveal">Two disciplines, one <em>standard.</em></h2>
+
+    <div class="services reveal">
+      <div class="service">
+        <div class="service-mark"><span class="dot"></span>Build</div>
+        <div class="service-title">Web Service Development</div>
+        <div class="service-desc">
+          End-to-end design and engineering of web applications —
+          from initial product strategy through to a shipped, maintained system.
+        </div>
+        <div class="service-tags">
+          <span class="service-tag">Product engineering</span>
+          <span class="service-tag">Web applications</span>
+          <span class="service-tag">API &amp; backend</span>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="service-mark"><span class="dot"></span>Guide</div>
+        <div class="service-title">Strategic Consulting</div>
+        <div class="service-desc">
+          Advisory engagements for teams navigating technical decisions —
+          architectural reviews, product direction, and long-form thinking on
+          systems that need to last.
+        </div>
+        <div class="service-tags">
+          <span class="service-tag">Architecture review</span>
+          <span class="service-tag">Product strategy</span>
+          <span class="service-tag">Advisory retainer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="block">
+  <div class="container">
+    <div class="eyebrow reveal"><span>Contact</span></div>
+
+    <div class="contact-block reveal">
+      <div class="contact-grid">
+        <div>
+          <div class="contact-heading">Begin a <em>conversation.</em></div>
+          <p class="contact-after">
+            We take a small number of engagements at a time. Tell us what
+            you are building, and where you would like guidance.
+          </p>
+        </div>
+        <div class="contact-details">
+          <div class="contact-row">
+            <div class="contact-row-label">Legal Name</div>
+            <div class="contact-row-value">BOSCRAE LIMITED</div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-row-label">Entity Type</div>
+            <div class="contact-row-value">BVI Business Company</div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-row-label">Registered Office</div>
+            <div class="contact-row-value">
+              Aegis Chambers, 1st Floor,<br/>
+              Ellen Skelton Building,<br/>
+              3076 Sir Francis Drake’s Highway,<br/>
+              Road Town,<br/>
+              Virgin Islands, British
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-row-label">General Inquiries</div>
+            <div class="contact-row-value">
+              <a href="mailto:info@boscraeltd.com">info@boscraeltd.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="logo" style="font-size: 17px;">
+      <span class="logo-mark" aria-hidden="true"></span>
+      BOSCRAE LIMITED
+    </a>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <div class="footer-text">© 2026 BOSCRAE LIMITED · BVI Business Company</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- Hero instrument: settle on load, follow pointer, idle sweep ---- */
+  var group = document.getElementById('bearing');
+  var inst = document.getElementById('instrument');
+  var out = document.getElementById('bearing-readout');
+  var REST = 152;
+
+  function paint(deg) {
+    deg = ((deg % 360) + 360) % 360;
+    group.setAttribute('transform', 'rotate(' + deg.toFixed(1) + ' 120 120)');
+    if (out) out.textContent = ('' + Math.round(deg)).padStart(3, '0') + '°';
+  }
+
+  if (group) {
+    if (reduce) {
+      paint(REST);
+    } else {
+      var shown = REST - 115, target = REST, following = false, lastMove = -1e9;
+      var fine = window.matchMedia('(pointer:fine)').matches;
+      paint(shown);
+
+      function frame(now) {
+        if (following && now - lastMove > 2600) following = false;
+        if (!following) target = REST + 15 * Math.sin(now * 0.00045) + 5 * Math.sin(now * 0.00104);
+        var diff = ((target - shown + 540) % 360) - 180;
+        shown += diff * (following ? 0.2 : 0.045);
+        paint(shown);
+        requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+
+      if (fine) {
+        var hero = document.querySelector('.hero');
+        hero.addEventListener('pointermove', function (e) {
+          var svg = inst.querySelector('svg');
+          var r = svg.getBoundingClientRect();
+          var dx = e.clientX - (r.left + r.width / 2);
+          var dy = e.clientY - (r.top + r.height / 2);
+          target = Math.atan2(dx, -dy) * 180 / Math.PI;
+          following = true;
+          lastMove = performance.now();
+        }, { passive: true });
+      }
+    }
+  }
+
+  /* ---- Scroll reveals ---- */
+  var nodes = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    nodes.forEach(function (n) { io.observe(n); });
+  } else {
+    nodes.forEach(function (n) { n.classList.add('in'); });
+  }
+})();
+</script>
+
+</body>
+</html>
